@@ -21,8 +21,6 @@ if(process.env.NODE_ENV === "development"){
 }else{
     client = new MongoClient(uri,option)
     clientPromise = client.connect()
-    console.log("NOT CONNECTED", clientPromise,client);
-    
 }
 
 // Export a module-scoped MongoClient promise. by this doing this in a
